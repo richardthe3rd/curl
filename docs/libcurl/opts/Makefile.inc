@@ -43,6 +43,7 @@ man_MANS =                                      \
   CURLINFO_REDIRECT_URL.3                       \
   CURLINFO_REQUEST_SIZE.3                       \
   CURLINFO_RESPONSE_CODE.3                      \
+  CURLINFO_RETRY_AFTER.3                        \
   CURLINFO_RTSP_CLIENT_CSEQ.3                   \
   CURLINFO_RTSP_CSEQ_RECV.3                     \
   CURLINFO_RTSP_SERVER_CSEQ.3                   \
@@ -67,6 +68,7 @@ man_MANS =                                      \
   CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3          \
   CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3        \
   CURLMOPT_MAXCONNECTS.3                        \
+  CURLMOPT_MAX_CONCURRENT_STREAMS.3             \
   CURLMOPT_MAX_HOST_CONNECTIONS.3               \
   CURLMOPT_MAX_PIPELINE_LENGTH.3                \
   CURLMOPT_MAX_TOTAL_CONNECTIONS.3              \
@@ -83,6 +85,8 @@ man_MANS =                                      \
   CURLOPT_ACCEPTTIMEOUT_MS.3                    \
   CURLOPT_ACCEPT_ENCODING.3                     \
   CURLOPT_ADDRESS_SCOPE.3                       \
+  CURLOPT_ALTSVC.3                              \
+  CURLOPT_ALTSVC_CTRL.3                         \
   CURLOPT_APPEND.3                              \
   CURLOPT_AUTOREFERER.3                         \
   CURLOPT_BUFFERSIZE.3                          \
@@ -109,11 +113,13 @@ man_MANS =                                      \
   CURLOPT_COPYPOSTFIELDS.3                      \
   CURLOPT_CRLF.3                                \
   CURLOPT_CRLFILE.3                             \
+  CURLOPT_CURLU.3                               \
   CURLOPT_CUSTOMREQUEST.3                       \
   CURLOPT_DEBUGDATA.3                           \
   CURLOPT_DEBUGFUNCTION.3                       \
   CURLOPT_DEFAULT_PROTOCOL.3                    \
   CURLOPT_DIRLISTONLY.3                         \
+  CURLOPT_DISALLOW_USERNAME_IN_URL.3            \
   CURLOPT_DNS_CACHE_TIMEOUT.3                   \
   CURLOPT_DNS_INTERFACE.3                       \
   CURLOPT_DNS_LOCAL_IP4.3                       \
@@ -121,6 +127,7 @@ man_MANS =                                      \
   CURLOPT_DNS_SERVERS.3                         \
   CURLOPT_DNS_SHUFFLE_ADDRESSES.3               \
   CURLOPT_DNS_USE_GLOBAL_CACHE.3                \
+  CURLOPT_DOH_URL.3                             \
   CURLOPT_EGDSOCKET.3                           \
   CURLOPT_ERRORBUFFER.3                         \
   CURLOPT_EXPECT_100_TIMEOUT_MS.3               \
@@ -150,6 +157,7 @@ man_MANS =                                      \
   CURLOPT_HEADERDATA.3                          \
   CURLOPT_HEADERFUNCTION.3                      \
   CURLOPT_HEADEROPT.3                           \
+  CURLOPT_HTTP09_ALLOWED.3                      \
   CURLOPT_HTTP200ALIASES.3                      \
   CURLOPT_HTTPAUTH.3                            \
   CURLOPT_HTTPGET.3                             \
@@ -180,6 +188,7 @@ man_MANS =                                      \
   CURLOPT_MAIL_AUTH.3                           \
   CURLOPT_MAIL_FROM.3                           \
   CURLOPT_MAIL_RCPT.3                           \
+  CURLOPT_MAXAGE_CONN.3                         \
   CURLOPT_MAXCONNECTS.3                         \
   CURLOPT_MAXFILESIZE.3                         \
   CURLOPT_MAXFILESIZE_LARGE.3                   \
@@ -237,6 +246,7 @@ man_MANS =                                      \
   CURLOPT_PROXY_SSL_OPTIONS.3                   \
   CURLOPT_PROXY_SSL_VERIFYHOST.3                \
   CURLOPT_PROXY_SSL_VERIFYPEER.3                \
+  CURLOPT_PROXY_TLS13_CIPHERS.3                 \
   CURLOPT_PROXY_TLSAUTH_PASSWORD.3              \
   CURLOPT_PROXY_TLSAUTH_TYPE.3                  \
   CURLOPT_PROXY_TLSAUTH_USERNAME.3              \
@@ -261,6 +271,7 @@ man_MANS =                                      \
   CURLOPT_RTSP_SESSION_ID.3                     \
   CURLOPT_RTSP_STREAM_URI.3                     \
   CURLOPT_RTSP_TRANSPORT.3                      \
+  CURLOPT_SASL_AUTHZID.3                        \
   CURLOPT_SASL_IR.3                             \
   CURLOPT_SEEKDATA.3                            \
   CURLOPT_SEEKFUNCTION.3                        \
@@ -315,14 +326,19 @@ man_MANS =                                      \
   CURLOPT_TIMEOUT_MS.3                          \
   CURLOPT_TIMEVALUE.3                           \
   CURLOPT_TIMEVALUE_LARGE.3                     \
+  CURLOPT_TLS13_CIPHERS.3                       \
   CURLOPT_TLSAUTH_PASSWORD.3                    \
   CURLOPT_TLSAUTH_TYPE.3                        \
   CURLOPT_TLSAUTH_USERNAME.3                    \
+  CURLOPT_TRAILERDATA.3                         \
+  CURLOPT_TRAILERFUNCTION.3                     \
   CURLOPT_TRANSFERTEXT.3                        \
   CURLOPT_TRANSFER_ENCODING.3                   \
   CURLOPT_UNIX_SOCKET_PATH.3                    \
   CURLOPT_UNRESTRICTED_AUTH.3                   \
+  CURLOPT_UPKEEP_INTERVAL_MS.3                  \
   CURLOPT_UPLOAD.3                              \
+  CURLOPT_UPLOAD_BUFFERSIZE.3                   \
   CURLOPT_URL.3                                 \
   CURLOPT_USERAGENT.3                           \
   CURLOPT_USERNAME.3                            \
