@@ -758,6 +758,36 @@ const char *Curl_strerror(int err, char *buf, size_t buflen)
 }
 
 #ifdef USE_WINDOWS_SSPI
+const char *Curl_win_strerror(int err, char *buf, size_t buflen)
+{
+#ifdef PRESERVE_WINDOWS_ERROR_CODE
+  DWORD old_win_err = GetLastError();
+#endif
+  int old_errno = errno;
+  char *p;
+  size_t max;
+
+  DEBUGASSERT(err >= 0);
+
+  max = buflen - 1;
+  *buf = '\0';
+
+  if(!FormatMessageA(FORMAT_MESSAGE_FROM_SYSTEM, NULL, err,
+                     LANG_NEUTRAL, buf, (DWORD)max, NULL)) {
+    msnprintf(buf, max, "Unknown error %d (%#x)", err, err);
+  }
+
+  if(errno != old_errno)
+    errno = old_errno;
+
+#ifdef PRESERVE_WINDOWS_ERROR_CODE
+  if(old_win_err != GetLastError())
+    SetLastError(old_win_err);
+#endif
+
+  return buf;
+}
+
 const char *Curl_sspi_strerror(int err, char *buf, size_t buflen)
 {
 #ifdef PRESERVE_WINDOWS_ERROR_CODE
